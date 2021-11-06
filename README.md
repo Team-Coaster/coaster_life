@@ -14,7 +14,6 @@ Original App Design Project - README Template
 Social media app that allows coaster enthusiast to track their coaster/ride count and allows allows them to take picutres and meet other people. 
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Social/Travel
 - **Mobile:** Camera, location, real time??
 - **Story:** Allows our users to track how many different rides they have been on and how many times they rode their favorite ride(s) but also allows them to find new park friends and lets them take pictures for their accounts
@@ -79,7 +78,6 @@ Social media app that allows coaster enthusiast to track their coaster/ride coun
    => Goes to Profile Picture Screen 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 ![Wire Frame](https://github.com/Team-Coaster/coaster_life/blob/main/wireframe_final.jpg)
 
 ### [BONUS] Digital Wireframes & Mockups
