@@ -89,6 +89,40 @@ Social media app that allows coaster enthusiast to track their coaster/ride coun
 ### Models
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+   - Message Screen
+      - (Read/GET) Query all messages in a conversation
+      ```swift
+          let query = PFQuery(className:"Message")
+            query.whereKey("author", equalTo: currentUser)
+            query.whereKey("receiver", equalTo: receiverID)
+            query.order(byDescending: "createdAt")
+            query.findObjectsInBackground { (messages: [PFObject]?, error: Error?) in
+          if let error = error { 
+              print(error.localizedDescription)
+           } else if let posts = posts {
+              print("Successfully retrieved \(messages.count) Messages.")
+          // TODO: Do something with Messages...
+           }
+        }
+
+      ```
+      - (Create/POST) Create a new message
+
+      - (Read/GET) Query message isRead status
+ 
+* Profile
+    * (Read/GET) Query logged in user object
+    * (Update/PUT) Update user profile image
+* Image
+    * (Read/GET) Query logged in users photo objects
+    * (Update/PUT)  show the users photos
+    * (Delete) Delete a photo
+* Friend List
+    * (Read/GET) Query logged in users friends
+    * (Update/PUT) Users friends photo
+    * (Update/PUT) Users friends status
+    * (Delete) Delete a friend
+* Ride List
+    * (Read/GET) Query logged in users ride list data
+    * (Update/PUT) number of times user has rode the ride
+    
