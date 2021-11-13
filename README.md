@@ -87,6 +87,44 @@ Social media app that allows coaster enthusiast to track their coaster/ride coun
 ## Schema 
 
 ### Models
+Profile
+| Property | Type  |       Description      |
+| --- | --- | ---|
+|objectid| String| Unique id for user|
+|Image| File| profile image of user|
+
+Image tab
+| Property | Type  |       Description      |
+| --- | --- | ---|
+|objectid| String| Unique id for user|
+|Image| File| images of the rides that a user posted|
+
+Friends List
+| Property | Type  |       Description      |
+| --- | --- | ---|
+|objectid| String| Unique id for user|
+|Friend| Pointer to User| Friend name
+|Friend Photo| Pointer to User| Friend Photo
+|Friend online| Pointer to User| Is person online
+
+Ride List
+| Property | Type  |       Description      |
+| --- | --- | ---|
+|objectid| String| Unique id for user|
+|Ride name| String| Name of ride
+|Has rode| Bool| If they have rode at least once
+|Ride count| Number| Amount of times user has rode
+
+Messaging
+| Property	| Type | Description |
+|-----------|------|----------------|
+| Sender ID	| String | The person’s ID who sends the message |
+| Receiver ID |	String |The person’s ID who receives the message |
+| Conversation ID | String | Unique ID for the conversations between the sender and receiver |
+| Message Kind | String | The type of the message |
+| Message | String | The message being sent |
+| Sent date | String | The date/time of message |
+| isRead | Bool | Flag showing the status of message |
 
 ### Networking
    - Message Screen
