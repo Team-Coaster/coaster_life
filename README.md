@@ -1,4 +1,4 @@
-Original App Design Project - README Template
+COASTER LIFE App Design Project - README
 ===
 
 # COASTER LIFE
@@ -79,7 +79,7 @@ Social media app that allows coaster enthusiast to track their coaster/ride coun
    => Goes to Profile Picture Screen 
 
 ## Wireframes
-![Wire Frame](https://github.com/Team-Coaster/coaster_life/blob/main/wireframe_final.jpg)
+<img src="https://imgur.com/0i51TPJ.gif" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 <img src="" width=600>
@@ -96,8 +96,10 @@ The following **required** functionality is completed:
 
 - [x] User can Login 
 - [x] User can Register
-- [x] User can ...
-- [x] User can view ...
+- [x] User can view Profile Screen
+- [x] User can view Parks Map Screen
+- [x] User can view Friends Screen
+
 
 The following **bonus** functionality is completed:
 - [x] User Login or Registration is persistent
