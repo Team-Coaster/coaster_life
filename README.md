@@ -7,6 +7,7 @@ Original App Design Project - README Template
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
+2. [User Stories & Video Walkthroughs](#user-stories--video-walkthroughs)
 2. [Schema](#Schema)
 
 ## Overview
@@ -81,8 +82,66 @@ Social media app that allows coaster enthusiast to track their coaster/ride coun
 ![Wire Frame](https://github.com/Team-Coaster/coaster_life/blob/main/wireframe_final.jpg)
 
 ### [BONUS] Digital Wireframes & Mockups
+<img src="" width=600>
 
 ### [BONUS] Interactive Prototype
+
+<img src="" width=250>
+
+## User Stories & Video Walkthroughs
+
+
+### Sprint 1 User Stories
+The following **required** functionality is completed:
+
+- [x] User can Login 
+- [x] User can Register
+- [x] User can ...
+- [x] User can view ...
+
+The following **bonus** functionality is completed:
+- [x] User Login or Registration is persistent
+
+### Sprint 1 Video Walkthrough
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 1'/>
+
+### Sprint 2 User Stories
+The following **required** functionality is completed:
+
+- [ ] User can ...
+
+### Sprint 2 Video Walkthrough
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 2' />
+
+
+### Sprint 3 User Stories
+The following **required** functionality is completed:
+
+- [ ] User can ...
+
+### Sprint 3 Video Walkthrough
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 3' />
+
+
+### Sprint 4 User Stories
+The following **required** functionality is completed:
+
+- [ ] User can ...
+
+The following **bonus** functionality is completed:
+- [ ] User can ...
+
+### Sprint 4 Video Walkthrough
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 4' />
+
 
 ## Schema 
 
