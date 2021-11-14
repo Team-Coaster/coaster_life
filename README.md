@@ -154,11 +154,6 @@ Profile
 |objectid| String| Unique id for user|
 |Image| File| profile image of user|
 
-Image tab
-| Property | Type  |       Description      |
-| --- | --- | ---|
-|objectid| String| Unique id for user|
-|Image| File| images of the rides that a user posted|
 
 Friends List
 | Property | Type  |       Description      |
@@ -175,6 +170,13 @@ Ride List
 |Ride name| String| Name of ride
 |Has rode| Bool| If they have rode at least once
 |Ride count| Number| Amount of times user has rode
+
+
+Image tab
+| Property | Type  |       Description      |
+| --- | --- | ---|
+|objectid| String| Unique id for user|
+|Image| File| images of the rides that a user posted|
 
 Messaging
 | Property	| Type | Description |
