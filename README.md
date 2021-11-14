@@ -82,11 +82,11 @@ Social media app that allows coaster enthusiast to track their coaster/ride coun
 <img src="https://imgur.com/0i51TPJ.gif" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src="" width=600>
+<img src="https://imgur.com/NCVvRvQ.gif" width=600>
 
 ### [BONUS] Interactive Prototype
 
-<img src="" width=250>
+<img src="https://imgur.com/bmEK9KJ.gif" width=250>
 
 ## User Stories & Video Walkthroughs
 
