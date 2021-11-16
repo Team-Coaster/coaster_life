@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Coaster Life</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com</string>
+    <string name="back4app_app_id">6r6HH3JwaKJcuJmVx3qEzjABU3ILGXxX2yWajtDN</string>
+    <string name="back4app_client_key">b0Yg9QkzLkTowYcWOUN5u9rJaSyL74EiOdAqNgbI</string>
+    <string name="login">Login</string>
+    <string name="account">Create Account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="conPassword">Confirm Password</string>
+    <string name="register">Register</string>
 </resources>
