@@ -1,4 +1,4 @@
-Original App Design Project - README Template
+COASTER LIFE App Design Project - README
 ===
 
 # COASTER LIFE
@@ -7,6 +7,7 @@ Original App Design Project - README Template
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
+2. [User Stories & Video Walkthroughs](#user-stories--video-walkthroughs)
 2. [Schema](#Schema)
 
 ## Overview
@@ -78,11 +79,71 @@ Social media app that allows coaster enthusiast to track their coaster/ride coun
    => Goes to Profile Picture Screen 
 
 ## Wireframes
-![Wire Frame](https://github.com/Team-Coaster/coaster_life/blob/main/wireframe_final.jpg)
+<img src="https://imgur.com/0i51TPJ.gif" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
+<img src="https://imgur.com/NCVvRvQ.gif" width=600>
 
 ### [BONUS] Interactive Prototype
+
+<img src="https://imgur.com/bmEK9KJ.gif" width=250>
+
+## User Stories & Video Walkthroughs
+
+
+### Sprint 1 User Stories
+The following **required** functionality is completed:
+
+- [x] User can Login 
+- [x] User can Register
+- [x] User can view Profile Screen
+- [x] User can view Parks Map Screen
+- [x] User can view Friends Screen
+
+
+The following **bonus** functionality is completed:
+- [x] User Login or Registration is persistent
+
+### Sprint 1 Video Walkthrough
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 1'/>
+
+### Sprint 2 User Stories
+The following **required** functionality is completed:
+
+- [ ] User can ...
+
+### Sprint 2 Video Walkthrough
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 2' />
+
+
+### Sprint 3 User Stories
+The following **required** functionality is completed:
+
+- [ ] User can ...
+
+### Sprint 3 Video Walkthrough
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 3' />
+
+
+### Sprint 4 User Stories
+The following **required** functionality is completed:
+
+- [ ] User can ...
+
+The following **bonus** functionality is completed:
+- [ ] User can ...
+
+### Sprint 4 Video Walkthrough
+Here's a walkthrough of implemented user stories:
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 4' />
+
 
 ## Schema 
 
@@ -93,11 +154,6 @@ Profile
 |objectid| String| Unique id for user|
 |Image| File| profile image of user|
 
-Image tab
-| Property | Type  |       Description      |
-| --- | --- | ---|
-|objectid| String| Unique id for user|
-|Image| File| images of the rides that a user posted|
 
 Friends List
 | Property | Type  |       Description      |
@@ -114,6 +170,13 @@ Ride List
 |Ride name| String| Name of ride
 |Has rode| Bool| If they have rode at least once
 |Ride count| Number| Amount of times user has rode
+
+
+Image tab
+| Property | Type  |       Description      |
+| --- | --- | ---|
+|objectid| String| Unique id for user|
+|Image| File| images of the rides that a user posted|
 
 Messaging
 | Property	| Type | Description |
