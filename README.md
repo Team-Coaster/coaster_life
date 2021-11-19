@@ -96,9 +96,6 @@ The following **required** functionality is completed:
 
 - [x] User can Login 
 - [x] User can Register
-- [x] User can view Profile Screen
-- [x] User can view Parks Map Screen
-- [x] User can view Friends Screen
 
 
 The following **bonus** functionality is completed:
