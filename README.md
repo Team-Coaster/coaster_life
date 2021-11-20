@@ -104,7 +104,7 @@ The following **bonus** functionality is completed:
 ### Sprint 1 Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-![walkthrough 1](https://github.com/Team-Coaster/coaster_life/blob/main/coaster_life_part_1.gif)
+<img src='https://imgur.com/HfWTCU9' title='Video Walkthrough' width='' alt='Video Walkthrough 1' />
 
 ### Sprint 2 User Stories
 The following **required** functionality is completed:
