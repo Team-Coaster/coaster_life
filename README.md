@@ -109,7 +109,9 @@ Here's a walkthrough of implemented user stories:
 ### Sprint 2 User Stories
 The following **required** functionality is completed:
 
-- [ ] User can ...
+- [ ] User can view Current Location
+- [ ] User can view Profile Screen
+- [ ] User can view Friend Screen
 
 ### Sprint 2 Video Walkthrough
 Here's a walkthrough of implemented user stories:
