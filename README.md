@@ -96,9 +96,6 @@ The following **required** functionality is completed:
 
 - [x] User can Login 
 - [x] User can Register
-- [x] User can view Profile Screen
-- [x] User can view Parks Map Screen
-- [x] User can view Friends Screen
 
 
 The following **bonus** functionality is completed:
@@ -107,12 +104,14 @@ The following **bonus** functionality is completed:
 ### Sprint 1 Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 1'/>
+<img src='https://imgur.com/HfWTCU9.gif' title='Video Walkthrough' width='349' height='677' alt='Video Walkthrough 1' />
 
 ### Sprint 2 User Stories
 The following **required** functionality is completed:
 
-- [ ] User can ...
+- [ ] User can view Current Location
+- [ ] User can view Profile Screen
+- [ ] User can view Friend Screen
 
 ### Sprint 2 Video Walkthrough
 Here's a walkthrough of implemented user stories:
@@ -123,7 +122,9 @@ Here's a walkthrough of implemented user stories:
 ### Sprint 3 User Stories
 The following **required** functionality is completed:
 
-- [ ] User can ...
+- [ ] User can view Ride Log
+- [ ] User can view Photo Feed
+- [ ] User can view Message Screen
 
 ### Sprint 3 Video Walkthrough
 Here's a walkthrough of implemented user stories:
@@ -134,10 +135,14 @@ Here's a walkthrough of implemented user stories:
 ### Sprint 4 User Stories
 The following **required** functionality is completed:
 
-- [ ] User can ...
+- [ ] User can Message other users of the app
+- [ ] User can access friends Photos
+- [ ] User can access friends Ride Log
+- [ ] User can access friends Location
+- [ ] User can access friends Profile Screen
 
 The following **bonus** functionality is completed:
-- [ ] User can ...
+- [ ] Consistent Color & Styling across the app
 
 ### Sprint 4 Video Walkthrough
 Here's a walkthrough of implemented user stories:
