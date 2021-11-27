@@ -1,6 +1,8 @@
 package com.teamcoaster.coasterlife;
 
 import com.parse.ParseClassName;
+import com.parse.ParseFile;
+import com.parse.ParseGeoPoint;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
@@ -23,4 +25,16 @@ public class Profile extends ParseObject {
     public void setScreenName(String screenName) { put(KEY_SCREENNAME, screenName); }
 
     //TODO Finish the rest of the Profile getters and setters
+
+    public ParseFile getImage() { return getParseFile(KEY_IMAGE); }
+
+    public void setImage(ParseFile image) { put(KEY_IMAGE, image); }
+
+    public ParseGeoPoint getPark() { return getParseGeoPoint(KEY_PARK); }
+
+    public void setPark(ParseGeoPoint park) { put(KEY_PARK, park); }
+
+    public String getFavRide() {return getString(KEY_favRide); }
+
+    public void setFavRide(String favRide) { put(KEY_favRide, favRide); }
 }

@@ -17,11 +17,14 @@
         android:roundIcon="@mipmap/rollercoaster_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoasterLife">
+        <activity
+            android:name=".NameChange"
+            android:exported="true" />
+
         <service
-            android:name="NaviService"
-            android:foregroundServiceType="location"
-            >
-        </service>
+            android:name=".NaviService"
+            android:foregroundServiceType="location"></service>
+
         <activity
             android:name=".signup"
             android:exported="true" />
@@ -34,7 +37,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
