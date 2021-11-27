@@ -112,11 +112,12 @@ The following **required** functionality is completed:
 - [ ] User can view Current Location
 - [ ] User can view Profile Screen
 - [ ] User can view Friend Screen
+- [x] User can logout
 
 ### Sprint 2 Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 2' />
+![walkthrough 2](https://github.com/Team-Coaster/coaster_life/blob/main/coaster_life_part_2.gif)
 
 
 ### Sprint 3 User Stories
