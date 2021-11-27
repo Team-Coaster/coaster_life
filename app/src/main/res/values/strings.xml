@@ -15,4 +15,7 @@
     <string name="Friends">Friends</string>
     <string name="logout">Log Out</string>
     <string name="profileimg">Profile Image</string>
+    <string name="screenname">Screen Name</string>
+    <string name="changeSN">Change Screen Name</string>
+    <string name="submit">Submit</string>
 </resources>

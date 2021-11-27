@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvScreenName"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".MainActivity">
 
 
@@ -14,8 +15,8 @@
         android:layout_height="204dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="78dp"
         android:background="@null"
         android:contentDescription="@string/profileimg"
         android:visibility="visible"
@@ -37,9 +38,9 @@
         android:id="@+id/btnFriends"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnProfileImg"
+        android:layout_below="@+id/btnSN"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="79dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="68dp"
         android:text="@string/Friends" />
 
@@ -73,6 +74,26 @@
         android:layout_marginTop="53dp"
         android:layout_marginEnd="42dp"
         android:text="@string/checkin" />
+
+    <TextView
+        android:id="@+id/tvSN"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/screenname" />
+
+    <Button
+        android:id="@+id/btnSN"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnProfileImg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/changeSN" />
 
 
 </RelativeLayout>

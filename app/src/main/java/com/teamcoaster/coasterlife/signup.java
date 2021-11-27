@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.parse.ParseException;
 import com.parse.ParseUser;
+import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
 
 public class signup extends AppCompatActivity {
@@ -45,15 +46,17 @@ public class signup extends AppCompatActivity {
                         @Override
                         public void done(ParseException e) {
                             if (e  == null) {
-                                ParseUser.logOut();
                                 Toast.makeText(signup.this, "You are registered " + useName, Toast.LENGTH_SHORT).show();
-                                goLogin();
                             } else {
                                 Log.e(TAG, "Issue with sign up", e);
                                 return;
                             }
                         }
                     });
+                    //ParseUser currentUser = ParseUser.getCurrentUser();
+                    //createProfile(currentUser, useName);
+                    ParseUser.logOut();
+                    goLogin();
                 }
 
                 else {
@@ -66,7 +69,25 @@ public class signup extends AppCompatActivity {
 
 
     }
+/*
+    private void createProfile(ParseUser parseUser, String useName) {
+        Profile profile = new Profile();
+        profile.setScreenName(useName);
+        profile.setUser(parseUser);
 
+        profile.saveInBackground(new SaveCallback() {
+            @Override
+            public void done(ParseException e) {
+                if (e != null) {
+                    Log.e(TAG, "Error while saving", e);
+                    Toast.makeText(signup.this, "Error while saving!", Toast.LENGTH_SHORT).show();
+                }
+                Log.i(TAG, "Profile Save was successful!");
+            }
+        });
+
+    }
+*/
     private void goLogin() {
         Intent i = new Intent(this, Login.class);
         startActivity(i);
