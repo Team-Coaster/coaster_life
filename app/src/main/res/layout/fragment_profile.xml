@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light">
+
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/ivProfilePicture"-->
+    <!--        android:layout_width="204dp"-->
+    <!--        android:layout_height="204dp"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_marginStart="2dp"-->
+    <!--        android:layout_marginTop="78dp"-->
+    <!--        android:background="@null"-->
+    <!--        android:contentDescription="@string/profileimg"-->
+    <!--        android:visibility="visible"-->
+    <!--        tools:src="@tools:sample/avatars"-->
+    <!--        tools:srcCompat="@tools:sample/avatars[2]"-->
+    <!--        tools:visibility="visible" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnProfileImg"-->
+    <!--        android:layout_width="110dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginTop="145dp"-->
+    <!--        android:layout_marginEnd="59dp"-->
+    <!--        android:text="@string/profileimg" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnFriends"-->
+    <!--        android:layout_width="110dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/btnSN"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginTop="18dp"-->
+    <!--        android:layout_marginEnd="68dp"-->
+    <!--        android:text="@string/Friends" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnRides"-->
+    <!--        android:layout_width="102dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/btnFriends"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginTop="44dp"-->
+    <!--        android:layout_marginEnd="74dp"-->
+    <!--        android:text="@string/Rides" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnLogout"-->
+    <!--        android:layout_width="151dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/btnRides"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="106dp"-->
+    <!--        android:layout_marginEnd="109dp"-->
+    <!--        android:text="@string/logout" />-->
+
+    <!--    <CheckBox-->
+    <!--        android:id="@+id/cbCheckin"-->
+    <!--        android:layout_width="107dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginTop="53dp"-->
+    <!--        android:layout_marginEnd="42dp"-->
+    <!--        android:text="@string/checkin" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tvSN"-->
+    <!--        android:layout_width="117dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_marginStart="56dp"-->
+    <!--        android:layout_marginTop="59dp"-->
+    <!--        android:text="@string/screenname" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnSN"-->
+    <!--        android:layout_width="139dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/btnProfileImg"-->
+    <!--        android:layout_alignParentEnd="true"-->
+    <!--        android:layout_marginTop="13dp"-->
+    <!--        android:layout_marginEnd="27dp"-->
+    <!--        android:text="@string/changeSN" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Fragment"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
