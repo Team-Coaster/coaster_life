@@ -17,13 +17,20 @@
         android:roundIcon="@mipmap/rollercoaster_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoasterLife">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBNppBMUIhhjIMk119sIOQlXzJoFXMV1DI"/>
+
         <activity
             android:name=".NameChange"
             android:exported="true" />
 
         <service
             android:name=".NaviService"
-            android:foregroundServiceType="location"></service>
+            android:foregroundServiceType="location">
+
+        </service>
 
         <activity
             android:name=".signup"
