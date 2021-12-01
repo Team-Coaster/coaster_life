@@ -22,32 +22,32 @@
 
         <Button
             android:id="@+id/btnProfileImg"
-            android:layout_width="110dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="145dp"
-            android:layout_marginEnd="59dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
             android:text="@string/profileimg" />
 
         <Button
             android:id="@+id/btnFriends"
-            android:layout_width="110dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btnSN"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="68dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
             android:text="@string/Friends" />
 
         <Button
             android:id="@+id/btnRides"
-            android:layout_width="102dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btnFriends"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="44dp"
-            android:layout_marginEnd="74dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
             android:text="@string/Rides" />
 
         <Button
@@ -57,8 +57,9 @@
             android:layout_below="@+id/btnRides"
             android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="106dp"
-            android:layout_marginEnd="109dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginEnd="130dp"
+            android:foregroundGravity="center_horizontal"
             android:text="@string/logout" />
 
         <CheckBox
@@ -67,13 +68,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="53dp"
-            android:layout_marginEnd="42dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
             android:text="@string/checkin" />
 
         <TextView
             android:id="@+id/tvSN"
-            android:layout_width="117dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
@@ -83,12 +84,12 @@
 
         <Button
             android:id="@+id/btnSN"
-            android:layout_width="139dp"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="68dp"
             android:layout_below="@+id/btnProfileImg"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="13dp"
-            android:layout_marginEnd="27dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
             android:text="@string/changeSN" />
 
 </RelativeLayout>
