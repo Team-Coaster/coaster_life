@@ -80,6 +80,16 @@ public class PeopleFragment extends Fragment {
                 LatLng dallas = new LatLng(32.776, -96.796);
                 googleMap.addMarker(new MarkerOptions().position(dallas).title("Marker Title").snippet("Marker Description"));
 
+
+                //Sample People markers (FRIENDS)
+                LatLng Amanda = new LatLng(32.730957, -97.110976);
+                LatLng Emmanuel = new LatLng(32.729675, -97.112199);
+                LatLng Jacob = new LatLng(32.731607, -97.116619);
+                googleMap.addMarker(new MarkerOptions().position(Amanda).title("Amanda").snippet("Friend Nearby"));
+                googleMap.addMarker(new MarkerOptions().position(Emmanuel).title("Emmanuel").snippet("Friend Nearby"));
+                googleMap.addMarker(new MarkerOptions().position(Jacob).title("Jacob").snippet("Friend Nearby"));
+
+
                 geocoder = new Geocoder(getActivity());
                 fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(getActivity());
 
