@@ -126,11 +126,12 @@ The following **required** functionality is completed:
 
 - [x] User can view Ride Log
 - [x] User can view Photo Feed
+- [x] User can view Sample Markers of other Users on Map
 
 ### Sprint 3 Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 3' />
+<img src='' title='Video Walkthrough' width='349' height='677' alt='Video Walkthrough 3' />
 
 
 ### Sprint 4 User Stories
@@ -149,7 +150,7 @@ The following **bonus** functionality is completed:
 ### Sprint 4 Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough 4' />
+<img src='' title='Video Walkthrough' width='349' height='677' alt='Video Walkthrough 4' />
 
 
 ## Schema 
