@@ -109,23 +109,23 @@ Here's a walkthrough of implemented user stories:
 ### Sprint 2 User Stories
 The following **required** functionality is completed:
 
-- [ ] User can view Current Location
-- [ ] User can view Profile Screen
-- [ ] User can view Friend Screen
+- [x] User can view Current Location
+- [x] User can view Profile Screen
+- [x] User can view Friend Screen
 - [x] User can logout
 
 ### Sprint 2 Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-![walkthrough 2](https://github.com/Team-Coaster/coaster_life/blob/main/coaster_life_part_2.gif)
+<img src='https://imgur.com/a/eZEdfVh' title='Video Walkthrough' width='349' height='677' alt='Video Walkthrough 2' />
+
 
 
 ### Sprint 3 User Stories
 The following **required** functionality is completed:
 
-- [ ] User can view Ride Log
-- [ ] User can view Photo Feed
-- [ ] User can view Message Screen
+- [x] User can view Ride Log
+- [x] User can view Photo Feed
 
 ### Sprint 3 Video Walkthrough
 Here's a walkthrough of implemented user stories:
@@ -144,6 +144,7 @@ The following **required** functionality is completed:
 
 The following **bonus** functionality is completed:
 - [ ] Consistent Color & Styling across the app
+- [ ] Message Screen
 
 ### Sprint 4 Video Walkthrough
 Here's a walkthrough of implemented user stories:
