@@ -67,40 +67,40 @@ public class FeedFragment extends Fragment {
         });
 
 
-//
-//        //Steps to use the recycler view:
-//        //0. Create layout for one row in the list
-//        //1. Create the adapter
-//        allPosts  = new ArrayList<>();
-//        adapter = new PostsAdapter(getContext(), allPosts);
-//        //2. Create the data source
-//        //3. Set the adapter on the recycler view
-//        rvPosts.setAdapter(adapter);
-//        //4. Set the layout manager on the recycler view
-//        rvPosts.setLayoutManager(new LinearLayoutManager(getContext()));
-//        queryPosts();
+
+        //Steps to use the recycler view:
+        //0. Create layout for one row in the list
+        //1. Create the adapter
+        allPosts  = new ArrayList<>();
+        adapter = new PostsAdapter(getContext(), allPosts);
+        //2. Create the data source
+        //3. Set the adapter on the recycler view
+        rvPosts.setAdapter(adapter);
+        //4. Set the layout manager on the recycler view
+        rvPosts.setLayoutManager(new LinearLayoutManager(getContext()));
+        queryPosts();
     }
-//
-//    protected void queryPosts() {
-//        ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
-//        query.include(Post.KEY_USER);
-//        query.setLimit(20);
-//        query.addDescendingOrder(Post.KEY_CREATED_KEY);
-//
-//        query.findInBackground(new FindCallback<Post>() {
-//            @Override
-//            public void done(List<Post> posts, ParseException e) {
-//                if (e != null) {
-//                    Log.e(TAG, "Issue with getting posts", e);
-//                    return;
-//                }
-//                for (Post post : posts) {
-//                    Log.i(TAG, "Post: " + post.getDescription() + ", username: " + post.getUser().getUsername());
-//                }
-//                allPosts.addAll(posts);
-//                adapter.notifyDataSetChanged();
-//            }
-//        });
-//    }
+
+    protected void queryPosts() {
+        ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
+        query.include(Post.KEY_USER);
+        query.setLimit(20);
+        query.addDescendingOrder(Post.KEY_CREATED_KEY);
+
+        query.findInBackground(new FindCallback<Post>() {
+            @Override
+            public void done(List<Post> posts, ParseException e) {
+                if (e != null) {
+                    Log.e(TAG, "Issue with getting posts", e);
+                    return;
+                }
+                for (Post post : posts) {
+                    Log.i(TAG, "Post: " + post.getDescription() + ", username: " + post.getUser().getUsername());
+                }
+                allPosts.addAll(posts);
+                adapter.notifyDataSetChanged();
+            }
+        });
+    }
 
 }
