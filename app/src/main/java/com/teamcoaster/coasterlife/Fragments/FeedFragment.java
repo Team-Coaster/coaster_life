@@ -15,6 +15,7 @@ import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -43,6 +44,11 @@ public class FeedFragment extends Fragment {
 
     private ImageButton composeBtn;
 
+    private int mContainerId;
+    private FragmentTransaction fragmentTransaction;
+    private FragmentManager fragmentManager;
+    private final static String ACTIVITY_TAG = "MainActivity";
+
     public FeedFragment() {
         // Required empty public constructor
     }
@@ -61,8 +67,14 @@ public class FeedFragment extends Fragment {
         composeBtn = view.findViewById(R.id.composeBtn);
         composeBtn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                //Navigate to Create a Post
 
+                //Navigate to Create a Post
+                Fragment fragment = new ComposeFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
 
@@ -101,6 +113,20 @@ public class FeedFragment extends Fragment {
                 adapter.notifyDataSetChanged();
             }
         });
+    }
+
+    public void replaceFragment(Fragment fragment, String TAG) {
+
+        try {
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(mContainerId, fragment, TAG);
+            fragmentTransaction.addToBackStack(TAG);
+            fragmentTransaction.commitAllowingStateLoss();
+
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+
     }
 
 }

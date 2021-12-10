@@ -6,6 +6,7 @@
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp">
     <!--    android:background="@android:color/holo_blue_light">-->
+    <!--    android:id="@+id/content_frame"-->
 
     <ImageButton
         android:id="@+id/composeBtn"
