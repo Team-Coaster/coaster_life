@@ -22,6 +22,7 @@ import com.parse.ParseQuery;
 import com.teamcoaster.coasterlife.Resources.Post;
 import com.teamcoaster.coasterlife.Resources.PostsAdapter;
 import com.teamcoaster.coasterlife.R;
+import com.teamcoaster.coasterlife.SubFragments.ComposeFragment;
 
 import java.util.ArrayList;
 import java.util.List;

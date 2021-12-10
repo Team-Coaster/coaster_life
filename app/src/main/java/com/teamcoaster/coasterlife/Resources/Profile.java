@@ -1,4 +1,4 @@
-package com.teamcoaster.coasterlife;
+package com.teamcoaster.coasterlife.Resources;
 
 import com.parse.ParseClassName;
 import com.parse.ParseFile;

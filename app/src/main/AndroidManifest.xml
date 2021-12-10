@@ -38,10 +38,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBNppBMUIhhjIMk119sIOQlXzJoFXMV1DI"/>
 
-        <activity
-            android:name=".NameChange"
-            android:exported="true" />
-
         <service
             android:name=".Resources.NaviService"
             android:foregroundServiceType="location">

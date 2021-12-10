@@ -1,4 +1,4 @@
-package com.teamcoaster.coasterlife.Fragments;
+package com.teamcoaster.coasterlife.SubFragments;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -44,7 +44,6 @@ import java.util.List;
  */
 public class ComposeFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
     public static final String TAG = "ComposeFragment";
     public static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 42;
     private EditText etDescription;
@@ -55,20 +54,10 @@ public class ComposeFragment extends Fragment {
     private File photoFile;
     public String photoFileName = "photo.jpg";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
 
     public ComposeFragment() {
         // Required empty public constructor
     }
-
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//
-//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

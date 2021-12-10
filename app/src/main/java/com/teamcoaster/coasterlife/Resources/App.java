@@ -4,7 +4,6 @@ import android.app.Application;
 
 import com.parse.Parse;
 import com.parse.ParseObject;
-import com.teamcoaster.coasterlife.Profile;
 import com.teamcoaster.coasterlife.R;
 
 public class App extends Application {
