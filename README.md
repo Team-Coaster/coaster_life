@@ -150,7 +150,7 @@ The following **bonus** functionality is completed:
 ### Sprint 4 Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='349' height='677' alt='Video Walkthrough 4' />
+<img src='https://imgur.com/fAFNfYf.gif' title='Video Walkthrough' width='349' height='677' alt='Video Walkthrough 4' />
 
 
 ## Schema 
