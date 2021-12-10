@@ -104,7 +104,7 @@ The following **bonus** functionality is completed:
 ### Sprint 1 Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='349' height='677' alt='Video Walkthrough 1' />
+<img src='https://i.imgur.com/HfWTCU9.gif' title='Video Walkthrough' width='349' height='677' alt='Video Walkthrough 1' />
 
 ### Sprint 2 User Stories
 The following **required** functionality is completed:
@@ -131,7 +131,7 @@ The following **required** functionality is completed:
 ### Sprint 3 Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-<img src='' title='Video Walkthrough' width='349' height='677' alt='Video Walkthrough 3' />
+<img src='https://i.imgur.com/PFSptYU.gif' title='Video Walkthrough' width='349' height='677' alt='Video Walkthrough 3' />
 
 
 ### Sprint 4 User Stories
