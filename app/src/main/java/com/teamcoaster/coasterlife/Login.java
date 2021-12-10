@@ -57,14 +57,17 @@ public class Login extends AppCompatActivity {
 
     private void loginUser(String username, String password) {
         Log.i(TAG, "Attempting to login user " + username);
+        //Navigate to Main Activity if User successfully signs in
         ParseUser.logInInBackground(username, password, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {
                 if (e != null) {
+                    //Error handling
                     Log.e(TAG, "Issue with login", e);
+                    Toast.makeText(Login.this, "Issue with login!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-
+                //Successful Login
                 goMainActivity();
                 Toast.makeText(Login.this, "Success!", Toast.LENGTH_SHORT).show();
             }
