@@ -1,15 +1,11 @@
 package com.teamcoaster.coasterlife.Fragments;
 
 
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
@@ -23,11 +19,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
-import com.parse.ParseUser;
-import com.teamcoaster.coasterlife.NameChange;
-import com.teamcoaster.coasterlife.Post;
-import com.teamcoaster.coasterlife.PostsAdapter;
-import com.teamcoaster.coasterlife.Profile;
+import com.teamcoaster.coasterlife.Resources.Post;
+import com.teamcoaster.coasterlife.Resources.PostsAdapter;
 import com.teamcoaster.coasterlife.R;
 
 import java.util.ArrayList;
@@ -43,11 +36,6 @@ public class FeedFragment extends Fragment {
     protected List<Post> allPosts;
 
     private ImageButton composeBtn;
-
-    private int mContainerId;
-    private FragmentTransaction fragmentTransaction;
-    private FragmentManager fragmentManager;
-    private final static String ACTIVITY_TAG = "MainActivity";
 
     public FeedFragment() {
         // Required empty public constructor
@@ -114,19 +102,4 @@ public class FeedFragment extends Fragment {
             }
         });
     }
-
-    public void replaceFragment(Fragment fragment, String TAG) {
-
-        try {
-            fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(mContainerId, fragment, TAG);
-            fragmentTransaction.addToBackStack(TAG);
-            fragmentTransaction.commitAllowingStateLoss();
-
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
-
-    }
-
 }

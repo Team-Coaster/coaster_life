@@ -1,4 +1,4 @@
-package com.teamcoaster.coasterlife;
+package com.teamcoaster.coasterlife.Authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.parse.ParseException;
 import com.parse.ParseUser;
-import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
+import com.teamcoaster.coasterlife.R;
 
-public class signup extends AppCompatActivity {
+public class Signup extends AppCompatActivity {
 
     public static final String TAG = "SignupActivity";
     private EditText etSignUpUsername;
@@ -46,7 +46,7 @@ public class signup extends AppCompatActivity {
                         @Override
                         public void done(ParseException e) {
                             if (e  == null) {
-                                Toast.makeText(signup.this, "You are registered " + useName, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Signup.this, "You are registered " + useName, Toast.LENGTH_SHORT).show();
                             } else {
                                 Log.e(TAG, "Issue with sign up", e);
                                 return;
@@ -61,7 +61,7 @@ public class signup extends AppCompatActivity {
 
                 else {
                     Log.i(TAG, "Passwords dont match");
-                    Toast.makeText(signup.this, "Passwords must match in order to register", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Signup.this, "Passwords must match in order to register", Toast.LENGTH_SHORT).show();
                 }
             }
         });

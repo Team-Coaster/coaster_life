@@ -33,7 +33,7 @@ import com.parse.ParseFile;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
-import com.teamcoaster.coasterlife.Post;
+import com.teamcoaster.coasterlife.Resources.Post;
 import com.teamcoaster.coasterlife.R;
 
 import java.io.File;

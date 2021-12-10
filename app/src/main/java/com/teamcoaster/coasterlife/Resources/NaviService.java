@@ -1,4 +1,4 @@
-package com.teamcoaster.coasterlife;
+package com.teamcoaster.coasterlife.Resources;
 
 import android.app.Service;
 import android.content.Intent;

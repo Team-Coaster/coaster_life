@@ -3,6 +3,7 @@ package com.teamcoaster.coasterlife.Fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,12 +16,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.bumptech.glide.Glide;
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseFile;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
-import com.teamcoaster.coasterlife.Login;
+import com.teamcoaster.coasterlife.Authentication.Login;
 import com.teamcoaster.coasterlife.NameChange;
 import com.teamcoaster.coasterlife.Profile;
 import com.teamcoaster.coasterlife.R;
+import com.teamcoaster.coasterlife.Resources.Post;
+import com.teamcoaster.coasterlife.Resources.PostsAdapter;
 
+import java.util.List;
 
 public class ProfileFragment extends Fragment {
 
@@ -34,8 +43,8 @@ public class ProfileFragment extends Fragment {
     private TextView tvSN;
     private CheckBox cbCheckin;
 
-//    final FragmentManager fragmentManager = getSupportFragmentManager();
-//    private BottomNavigationView bottomNavigationView;
+    protected PostsAdapter adapter;
+    protected List<Post> allPosts;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -63,6 +72,14 @@ public class ProfileFragment extends Fragment {
         tvSN = view.findViewById(R.id.tvSN);
 
         cbCheckin = view.findViewById(R.id.cbCheckin);
+
+        //Initialize profile Image
+        ParseFile image = ParseUser.getCurrentUser().getParseFile("image");
+
+//        if (image != null) {
+//            Glide.with(getActivity()).load(image.getUrl()).into(ivProfilePicture);
+//                Glide.with(getActivity()).load(image.getFileInBackground()).into(ivProfilePicture);
+//        }
 
 
         btnProfileImg.setOnClickListener(new View.OnClickListener() {
@@ -96,6 +113,27 @@ public class ProfileFragment extends Fragment {
 
 
 }
+    protected void queryPosts() {
+        ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
+        query.include(Post.KEY_USER);
+        query.setLimit(20);
+        query.addDescendingOrder(Post.KEY_CREATED_KEY);
+
+        query.findInBackground(new FindCallback<Post>() {
+            @Override
+            public void done(List<Post> posts, ParseException e) {
+                if (e != null) {
+                    Log.e(TAG, "Issue with getting posts", e);
+                    return;
+                }
+                for (Post post : posts) {
+                    Log.i(TAG, "Post: " + post.getDescription() + ", username: " + post.getUser().getUsername());
+                }
+                allPosts.addAll(posts);
+                adapter.notifyDataSetChanged();
+            }
+        });
+    }
 
     /*
     private String getName(ParseUser currentUser) {
@@ -117,5 +155,6 @@ public class ProfileFragment extends Fragment {
     private void gotoLogin() {
         Intent i = new Intent(getActivity(), Login.class);
         startActivity(i);
+        getActivity().finish();
     }
 }

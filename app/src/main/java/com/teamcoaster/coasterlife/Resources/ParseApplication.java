@@ -1,9 +1,10 @@
-package com.teamcoaster.coasterlife;
+package com.teamcoaster.coasterlife.Resources;
 
 import android.app.Application;
 
 import com.parse.Parse;
 import com.parse.ParseObject;
+import com.teamcoaster.coasterlife.Resources.Post;
 
 public class ParseApplication extends Application {
     @Override

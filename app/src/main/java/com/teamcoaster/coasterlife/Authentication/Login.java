@@ -1,4 +1,4 @@
-package com.teamcoaster.coasterlife;
+package com.teamcoaster.coasterlife.Authentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +13,8 @@ import android.widget.Toast;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
+import com.teamcoaster.coasterlife.MainActivity;
+import com.teamcoaster.coasterlife.R;
 
 public class Login extends AppCompatActivity {
 
@@ -75,9 +77,8 @@ public class Login extends AppCompatActivity {
     }
 
     private void goCreateAccount() {
-        Intent i = new Intent(this, signup.class);
+        Intent i = new Intent(this, Signup.class);
         startActivity(i);
-        finish();
     }
 
     private void goMainActivity() {

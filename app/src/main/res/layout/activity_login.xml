@@ -6,22 +6,26 @@
     android:layout_height="match_parent"
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
+    android:background="#F6F6F6"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".Authentication.Login">
 
     <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
-        android:layout_height="80dp" />
+        android:layout_height="80dp"
+        android:background="#F6F6F6" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#F6F6F6"
+        android:fontFamily="monospace"
         android:gravity="center|center_vertical"
         android:text="Coaster Life"
         android:textColor="#03A9F4"
-        android:textSize="34sp" />
+        android:textSize="60sp" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -34,9 +38,9 @@
         android:id="@+id/etUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textPersonName"
@@ -46,8 +50,10 @@
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPersonName|textWebPassword"
@@ -58,6 +64,8 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
         android:text="@string/login"
         tools:text="Sign In" />
 
@@ -65,6 +73,9 @@
         android:id="@+id/btnCreateAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#03A9F4"
         android:text="@string/account"
         tools:text="Create Account" />
 </LinearLayout>
