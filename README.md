@@ -137,15 +137,15 @@ Here's a walkthrough of implemented user stories:
 ### Sprint 4 User Stories
 The following **required** functionality is completed:
 
-- [ ] User can Message other users of the app
-- [ ] User can access friends Photos
-- [ ] User can access friends Ride Log
-- [ ] User can access friends Location
-- [ ] User can access friends Profile Screen
+- [x] User can access friends Photos
+- [x] User can access friends Ride Log
+- [x] User can access friends Location
+- [x] User can access friends Profile Screen
 
 The following **bonus** functionality is completed:
-- [ ] Consistent Color & Styling across the app
+- [x] Consistent Color & Styling across the app
 - [ ] Message Screen
+- [ ] User can Message other users of the app
 
 ### Sprint 4 Video Walkthrough
 Here's a walkthrough of implemented user stories:
